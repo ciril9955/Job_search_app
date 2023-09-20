@@ -39,7 +39,7 @@ if st.button("Search Jobs"):
         if "jobs" in jooble_data:
             jooble_jobs = jooble_data["jobs"]
             if len(jooble_jobs) > 0:
-                st.subheader("Jooble Job Listings:")
+                st.subheader("Jobs Available:")
                 for i, job in enumerate(jooble_jobs):
                     company_name = job.get("company")
                     job_title = job.get("title")
